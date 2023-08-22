@@ -69,7 +69,6 @@ body {
 
 .spec-single-column__wrapper {
   padding: 40px 56px 50px;
-
   border: 1px solid #ababab;
   background: #f6f6f6;
 
@@ -90,5 +89,37 @@ body {
 
   b {
     font-weight: 700;
+  }
+
+  @include xl {
+    padding: 42px 53px 47px 42px;
+  }
+
+  @include lg {
+    padding: 31px 53px 37px 48px;
+  }
+
+  @include md {
+    padding: 31px 39px 36px 40px;
+
+    p {
+      font-size: 15px;
+
+      &:not(:last-child) {
+        margin-bottom: 21px;
+      }
+    }
+  }
+
+  @include xs {
+    padding: 25px 23px 33px 23px;
+
+    p {
+      line-height: 1.42;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
   }
 }

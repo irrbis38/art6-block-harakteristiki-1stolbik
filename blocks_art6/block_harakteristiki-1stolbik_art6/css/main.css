@@ -89,3 +89,35 @@ body {
 .spec-single-column__wrapper b {
   font-weight: 700;
 }
+@media (max-width: 1599px) {
+  .spec-single-column__wrapper {
+    padding: 42px 53px 47px 42px;
+  }
+}
+@media (max-width: 1359px) {
+  .spec-single-column__wrapper {
+    padding: 31px 53px 37px 48px;
+  }
+}
+@media (max-width: 1279px) {
+  .spec-single-column__wrapper {
+    padding: 31px 39px 36px 40px;
+  }
+  .spec-single-column__wrapper p {
+    font-size: 15px;
+  }
+  .spec-single-column__wrapper p:not(:last-child) {
+    margin-bottom: 21px;
+  }
+}
+@media (max-width: 767px) {
+  .spec-single-column__wrapper {
+    padding: 25px 23px 33px 23px;
+  }
+  .spec-single-column__wrapper p {
+    line-height: 1.42;
+  }
+  .spec-single-column__wrapper p:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
