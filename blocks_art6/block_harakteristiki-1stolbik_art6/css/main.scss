@@ -5,7 +5,9 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/montserrat-v25-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v25-cyrillic_latin-regular.ttf") format("truetype");
+  src: url("../fonts/montserrat-v25-cyrillic_latin-regular.woff2")
+      format("woff2"),
+    url("../fonts/montserrat-v25-cyrillic_latin-regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -13,7 +15,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/montserrat-v25-cyrillic_latin-700.woff2") format("woff2"), url("../fonts/montserrat-v25-cyrillic_latin-700.ttf") format("truetype");
+  src: url("../fonts/montserrat-v25-cyrillic_latin-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v25-cyrillic_latin-700.ttf") format("truetype");
 }
 
 body {
@@ -68,7 +71,7 @@ body {
 }
 
 .spec-single-column__wrapper {
-  padding: 40px 56px 50px;
+  padding: 36px 56px 45px;
   border: 1px solid #ababab;
   background: #f6f6f6;
 
@@ -79,11 +82,11 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.5;
     font-feature-settings: "clig" off, "liga" off;
 
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 12px;
     }
   }
 
@@ -92,21 +95,33 @@ body {
   }
 
   @include xl {
-    padding: 42px 53px 47px 42px;
+    padding: 36px 53px 42px 40px;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
   }
 
   @include lg {
-    padding: 31px 53px 37px 48px;
+    padding: 28px 53px 33px 48px;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
   }
 
   @include md {
-    padding: 31px 39px 36px 40px;
+    padding: 29px 39px 33px 40px;
 
     p {
       font-size: 15px;
 
       &:not(:last-child) {
-        margin-bottom: 21px;
+        margin-bottom: 13px;
       }
     }
   }

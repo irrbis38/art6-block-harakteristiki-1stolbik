@@ -23,7 +23,8 @@ body {
   background-color: #fff;
 }
 .spec-single-column, .spec-single-column * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 @media (max-width: 1359px) {
   .spec-single-column {
@@ -69,7 +70,7 @@ body {
 }
 
 .spec-single-column__wrapper {
-  padding: 40px 56px 50px;
+  padding: 36px 56px 45px;
   border: 1px solid #ababab;
   background: #f6f6f6;
 }
@@ -80,34 +81,41 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1;
-  font-feature-settings: "clig" off, "liga" off;
+  line-height: 1.5;
+  -webkit-font-feature-settings: "clig" off, "liga" off;
+          font-feature-settings: "clig" off, "liga" off;
 }
 .spec-single-column__wrapper p:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .spec-single-column__wrapper b {
   font-weight: 700;
 }
 @media (max-width: 1599px) {
   .spec-single-column__wrapper {
-    padding: 42px 53px 47px 42px;
+    padding: 36px 53px 42px 40px;
+  }
+  .spec-single-column__wrapper p:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 1359px) {
   .spec-single-column__wrapper {
-    padding: 31px 53px 37px 48px;
+    padding: 28px 53px 33px 48px;
+  }
+  .spec-single-column__wrapper p:not(:last-child) {
+    margin-bottom: 12px;
   }
 }
 @media (max-width: 1279px) {
   .spec-single-column__wrapper {
-    padding: 31px 39px 36px 40px;
+    padding: 29px 39px 33px 40px;
   }
   .spec-single-column__wrapper p {
     font-size: 15px;
   }
   .spec-single-column__wrapper p:not(:last-child) {
-    margin-bottom: 21px;
+    margin-bottom: 13px;
   }
 }
 @media (max-width: 767px) {
